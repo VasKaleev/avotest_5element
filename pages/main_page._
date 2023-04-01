@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 from base.base_class import Base
-#from win32api import GetSystemMetrics
+from win32api import GetSystemMetrics
 from selenium.webdriver import ActionChains
 import time
 class Main_page(Base):
@@ -94,7 +94,7 @@ class Main_page(Base):
     def click_vid(self):
         self.get_vid().click()
         print("Click vid") 
-        #print("Monitor Height =", GetSystemMetrics(1))
+        print("Monitor Height =", GetSystemMetrics(1))
         SCROLL_PAUSE_TIME = 1
         self.browser.execute_script("window.scrollTo(0, window.scrollY + 500)")
         print("Click chekbox filter tovar v rassrochku down")

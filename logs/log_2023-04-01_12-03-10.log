@@ -1,0 +1,33 @@
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-04-01 12:03:13.581990
+Start name method: authorization
+
+End time: 2023-04-01 12:03:42.530546
+End name method: authorization
+URL: https://5element.by/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-04-01 12:03:42.530546
+Start name method: select_menu_main
+
+End time: 2023-04-01 12:04:45.494792
+End name method: select_menu_main
+URL: https://5element.by/cart/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2023-04-01 12:04:45.510467
+Start name method: product_cart
+
+End time: 2023-04-01 12:04:47.700835
+End name method: product_cart
+URL: https://5element.by/cart/
+
+-----

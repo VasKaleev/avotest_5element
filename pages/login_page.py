@@ -10,6 +10,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 #from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver import ActionChains
 from base.base_class import Base
+from utilites.logger import Logger
 class Login_page(Base):
 
     url = 'https://5element.by/'
@@ -61,6 +62,7 @@ class Login_page(Base):
 
     #Methods
     def authorization(self):
+        Logger.add_start_step(method='authorization')
         self.browser.get(self.url)
         self.browser.maximize_window() 
         self.get_current_url()
@@ -71,5 +73,6 @@ class Login_page(Base):
         self.click_login_button()
         self.click_modal_popap()
         self.assert_word(self.get_main_word(), "Василий")
+        Logger.add_end_step(url=self.browser.current_url, method='authorization')
 
       

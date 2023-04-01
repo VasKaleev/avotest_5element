@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 from base.base_class import Base
+from utilites.logger import Logger
 #from win32api import GetSystemMetrics
 from selenium.webdriver import ActionChains
 import time
@@ -149,6 +150,7 @@ class Main_page(Base):
           
     #Methods
     def select_menu_main(self):
+        Logger.add_start_step(method='select_menu_main')
         self.get_current_url()
         self.click_select_menu_main()
         self.click_select_menu_noutbuki()
@@ -164,6 +166,7 @@ class Main_page(Base):
         self.click_cart_nazv_prod_1()
         self.click_cart_price_prod_1()
         self.clickp_cart_pereyti()
+        Logger.add_end_step(url=self.browser.current_url, method='select_menu_main')
 
     
 
