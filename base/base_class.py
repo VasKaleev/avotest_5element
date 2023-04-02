@@ -19,9 +19,7 @@ class Base():
     """Method Screenshot"""
     def get_screenshot(self):
         now_date = (datetime.utcnow()+ timedelta(hours=+3)).strftime("%Y.%m.%d.%H.%M.%S")
-        name_screenshot = 'screenshot'+ now_date + '.png'
-        #browser.save_screenshot("d:\\Python\\avtom_selen_smit\\screen\\" + name_screenshot)
-        #browser.save_screenshot(".\\screen\\" + name_screenshot)
+        name_screenshot = 'screenshot'+ now_date + '.png
         self.browser.save_screenshot(f'./screen/screenshot{now_date}.png')
     
     """Method assert url"""
