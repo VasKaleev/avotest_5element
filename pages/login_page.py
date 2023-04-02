@@ -7,7 +7,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
-#from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver import ActionChains
 from base.base_class import Base
 from utilites.logger import Logger
